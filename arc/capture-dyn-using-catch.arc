@@ -1,0 +1,5 @@
+(def capture-dyn (f)
+  (let cf (catch (let cr (ccc throw)
+                   (cr (f))))
+    (fn ()
+      (ccc cf))))

@@ -1,0 +1,6 @@
+(def eval (x (o into globals))
+  (let m (macro-expand x into)
+    (let i (expand-implicit m)
+      (let c (T-c i ar-halt0)
+        (let a (cps-call-pass c)
+          (ar-eval a))))))

@@ -1,0 +1,8 @@
+(def eval (expr (o into globals))
+  ; (p expr)
+  (let m (macro-expand expr into)
+    ; (p (xhash m))
+    (let i (expand-implicit m)
+      ; (p (xhash i))
+      (let p (unprimitive i)
+        (ar-eval p)))))

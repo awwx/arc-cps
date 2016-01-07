@@ -1,0 +1,12 @@
+(assert (is (($fn--xVrP8JItk2Ot (a)
+               ($begin--xVrP8JItk2Ot (assign a 123) a))
+             456)
+            123))
+
+(assert (is (($fn--xVrP8JItk2Ot (a)
+               (assign a 42))
+             0)
+            42))
+
+(assert (is (assign h2rQsbwIuE0E 196) 196))
+(assert (is h2rQsbwIuE0E 196))

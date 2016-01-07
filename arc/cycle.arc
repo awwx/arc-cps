@@ -1,0 +1,11 @@
+(def cycle (x)
+  (catch
+    (let seen (table)
+      ((afn (x)
+         (when (acons x)
+           (when (seen x)
+             (throw t))
+           (set seen.x)
+           (self (car x))
+           (self (cdr x))))
+       x))))

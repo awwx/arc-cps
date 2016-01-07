@@ -1,0 +1,1 @@
+(assert (is (car (map1 car '((a 1) (b 2)))) 'a))

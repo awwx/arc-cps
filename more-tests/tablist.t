@@ -1,0 +1,5 @@
+(let l (tablist (obj a 1 b 2 c 3))
+  (test (len l) 3)
+  (test (alref l 'a) 1)
+  (test (alref l 'b) 2)
+  (test (alref l 'c) 3))
