@@ -1,3 +1,7 @@
+; CPS conversion pass
+; Derived from Matt Might's scheme-cps-convert.rkt from
+; http://matt.might.net/articles/cps-conversion/
+
 (prim-namespace
   (= caddr car:cddr)
 
