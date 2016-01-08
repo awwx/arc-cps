@@ -22,10 +22,6 @@
                        (k x)))))))
 
   (def dynamic-wind (in body out)
-    (unless (isa in 'fn)   (err "oops in is not a fn"))
-    (unless (isa body 'fn) (err "oops body is not a fn"))
-    (unless (isa out 'fn)  (err "oops out is not a fn"))
-
     (with (xin  (capture-dyn in)
            xout (capture-dyn out))
       (xin)
