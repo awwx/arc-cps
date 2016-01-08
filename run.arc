@@ -64,10 +64,8 @@
 (def xload files
   (apply loadf eval files))
 
-(mac trace body
-  `(accum say ,@body))
-
-(xload 'extend-def
+(xload 'trace0
+       'extend-def
        'iso-table
        'iso-tagged
        'test2

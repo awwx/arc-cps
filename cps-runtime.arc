@@ -111,14 +111,6 @@
 (= cr!stdout (cr-parameter 'stdout))
 (= cr!stderr (cr-parameter 'stderr))
 
-; ; todo not tail call
-; (= cr!protect
-;   (fn (k dyn during after)
-;     (k (protect (fn ()
-;                   (during idfn dyn))
-;                 (fn ()
-;                   (after idfn dyn))))))
-
 (= cr!ar-halt0 idfn)
 
 (= cr!ar-eval
